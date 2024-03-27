@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/prueba_jquery.css" rel="stylesheet" />
+</head>
+<body>
+    <header id="cabecera" class="container text-center mt-2">
+        <img id="imgCabecera" src="img/Coyote.jpg" />
+    </header>
+    <div class="container">
+        <div class="row">
+            <aside class="col pt-2">
+                <img id="imgAside" class="w-50 py-2" src="img/Coyote.jpg" />
+                <input id="btnOcultarMostrar" type="button" value="Ocultar/Mostrar" />
+            </aside>
+            <section class="col-8 mt-3">
+                <article>
+                    <div class="d-inline col-5 mb-3 py-3">
+                        <div>
+                            <p id="resultado"></p>
+                        </div>
+                        <input id="entrada" type="text" disabled />
+                        <input class="btnOperacion p-2" id="btnMas" type="button" value="+" />
+                        <input class="btnOperacion p-2" id="btnMenos" type="button" value="-" />
+                        <input class="btnOperacion p-2" id="btnIgual" type="button" value="=" />
+                    </div>
+                    <div class="col-3">
+                        <div class="d-flex justify-content-around my-3">
+                            <input class="btnNumero px-2" id="btn7" type="button" value="7" />
+                            <input class="btnNumero px-2" id="btn8" type="button" value="8" />
+                            <input class="btnNumero px-2" id="btn9" type="button" value="9" />
+                        </div>
+                        <div class="d-flex justify-content-around mb-3">
+                            <input class="btnNumero px-2" id="btn4" type="button" value="4" />
+                            <input class="btnNumero px-2" id="btn5" type="button" value="5" />
+                            <input class="btnNumero px-2" id="btn6" type="button" value="6" />
+                        </div>
+                        <div class="d-flex justify-content-around mb-3">
+                            <input class="btnNumero px-2" id="btn1" type="button" value="1" />
+                            <input class="btnNumero px-2" id="btn2" type="button" value="2" />
+                            <input class="btnNumero px-2" id="btn3" type="button" value="3" />
+                        </div>
+                        <div class="row justify-content-center px-3">
+                            <input class="btnNumero" id="btn0" type="button" value="0" />
+                            <input class="btnOperacion mt-2" id="btnLimpiar" type="button" value="Limpiar" />
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+    <footer id="pie" class="container-fluid fixed-bottom">
+        <div class="row text-center align-middle">
+            <p class="m-3">Footer</p>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="js/prueba_jquery.js"></script>
+</body>
+</html>
